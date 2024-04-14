@@ -34,7 +34,7 @@ public class ICMPpinger {
                 }
 
                 try {
-                    Thread.sleep(1000); // Ждем 1 секунду перед отправкой следующего пакета
+                    Thread.sleep(1000);
                 } catch (InterruptedException e) {
                     e.printStackTrace();
                 }
