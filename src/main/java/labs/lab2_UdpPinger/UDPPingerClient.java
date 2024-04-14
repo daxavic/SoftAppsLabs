@@ -30,8 +30,8 @@ public class UDPPingerClient {
                 clientSocket.receive(receivePacket);
 
                 String response = new String(receivePacket.getData(), 0, receivePacket.getLength());
-                long rtt = (LocalDateTime.now().atZone(ZoneOffset.UTC).toInstant().toEpochMilli() -
-                        time.atZone(ZoneOffset.UTC).toInstant().toEpochMilli());
+                double rtt = (LocalDateTime.now().atZone(ZoneOffset.UTC).toInstant().toEpochMilli() -
+                        time.atZone(ZoneOffset.UTC).toInstant().toEpochMilli()) / 1000.0;
 
                 System.out.println(response);
                 System.out.println("RTT: " + rtt + " ms");

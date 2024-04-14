@@ -9,10 +9,10 @@ public class client {
     public static void main(String[] args) {
         String hostSMTP = "smtp.yandex.ru";
         Integer port = 465;
-        String username = "davic-labs@yandex.ru";
-        String password = "zsarvbiadxkabash";
+        String username = "-@yandex.ru";
+        String password = "";
 
-        String toAddress = "daxavic@yandex.ru";
+        String toAddress = "-@yandex.ru";
 
         Properties prop = new Properties();
         prop.put("mail.smtp.host", hostSMTP);
